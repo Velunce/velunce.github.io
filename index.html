@@ -1,1 +1,640 @@
-<script>window.location.href="dapeng.neocities.org"</script>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <!-- Basic Page Needs
+================================================== -->
+    <title>Velunce's Resume</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Mobile Specific Metas
+================================================== -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <!-- Favicons
+================================================== -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <!--stylesheets
+====================================================-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/simpletextrotator.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <!-- JQUERY -->
+</head>
+
+<body>
+    <!--FRONT PAGE/ SPLASH SCREEN SECTION-->
+    <div class="loading-screen"></div>
+    <div id="wrapper">
+        <div id="frontpage">
+            <div class="shadow-img"></div>
+            <img src="images/front-image.jpg" class="front-img img-responsive" alt="Front-image">
+            <h2>Velunce
+                <span class="invert">Zhang</span>
+            </h2>
+            <h3 class="invert" style="margin-top: -10px; margin-bottom: 10px;">Web
+                <span class="rotate">Developer, Designer, Artist</span>
+            </h3>
+            <div class="frontclick">
+                <img src="images/click.png" alt="" class="img-responsive">
+                <span class="pulse"></span>
+            </div>
+        </div>
+    </div>
+    <!--FRONT PAGE/ SPLASH SCREEN SECTION ENDS-->
+    <!--container-->
+    <div class="container">
+        <div id="content" class="row hidden">
+            <div class="col-sm-4">
+                <!--namecard-->
+                <div id="namecard" class="namecard">
+                    <div class="shadow-img"></div>
+                    <h2 class="maintitle">Velunce
+                        <span class="invert">Zhang</span>
+                    </h2>
+                    <!--PROFILE NAME-->
+                    <h3 class="invert sub-maintitle">Web
+                        <span class="rotate">Developer, Designer, Artist</span>
+                        <!--SUBTITLE AFTET NAME-->
+                    </h3>
+                    <img id="profile-img" class="profile-img transparent" src="images/profile-thum.png" alt="profile-image">
+                    <!--PROFILE IMAGE-->
+                </div>
+                <!--/#namecard-->
+                <!--menu-->
+                <div id="menu-container">
+                    <!--PAGE MENU-->
+                    <ul class="nav-menu no-padding">
+                        <li class="nav-btn selected" title="Home" data-page="home">
+                            <div class="hover-background"></div>
+                            <span>Home</span>
+                            <i class="fa fa-user fa-fw"></i>
+                        </li>
+                        <li class="nav-btn" id="resume-btn" title="Resume" data-page="resume">
+                            <div class="hover-background"></div>
+                            <span>Resume</span>
+                            <i class="fa fa-file-text fa-fw"></i>
+                        </li>
+                        <!-- <li class="nav-btn folio-btn" data-filter="*" title="Portfolio" data-page="portfolio">
+                            <div class="hover-background"></div>
+                            <span>Collections</span><i class="fa fa-suitcase fa-fw"></i>
+                        </li> -->
+                        <li class="nav-btn folio-btn" data-filter="*" title="Employment" data-page="employment">
+                            <div class="hover-background"></div>
+                            <span>Employment</span>
+                            <i class="fa fa-suitcase fa-fw"></i>
+                        </li>
+                        <li class="nav-btn" title="Contact" id="contact-link" data-page="contact">
+                            <div class="hover-background"></div>
+                            <span>Contact</span>
+                            <i class="fa fa-paper-plane fa-fw"></i>
+                        </li>
+                    </ul>
+                    <!--/.nav-menu __PAGE MENU ENDS-->
+                    <!--SOCIAL NAV MENU-->
+                    <div class="social-menu-container">
+                        <ul class="social-menu no-padding">
+                            <li>
+                                <a href="https://www.facebook.com/velunce">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/103098198069311722415/palette">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/velunce">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/velunce">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.social-menu-container-->
+                </div>
+                <!--#menu-container-->
+            </div>
+            <div class="col-sm-8 page-segment">
+                <ul class="page-container no-padding">
+                    <!--HOME/PROFILE PAGE-->
+                    <li id="home" class="selected">
+                        <div class="title-container hidden">
+                            <div class="shadow-img"></div>
+                            <h2 class="rotate-out">Welcome To
+                                <span class="invert">My Profile</span>
+                            </h2>
+                            <!--HOME TITLE-->
+                        </div>
+                        <div class="description hidden">
+                            <div class="watermark-home"></div>
+                            <div class="fade-text transparent">
+                                <!--DESCRIPTION ON HOME-->
+                                <div class="strong-text">Hello, I am
+                                    <span>Velunce</span>
+                                </div>
+                                <div class="focus-text">
+                                    <span>Web Developer & </span>
+                                    <span>Web Designer</span>
+                                </div>
+                                <p class="large-paragraph">4 years + front-end development experience, skilled use of HTML / HTML5, CSS / CSS3, JavaScript,
+                                    Ajax, Bootstrap, jQuery Mobile, AngularJS, solid foundation. 1 year + mobile development
+                                    experience in response type; 1year ERP front-end project development experience. Familiar
+                                    with the principle of response, independent development of responsive Web site, an independent
+                                    person can support more than 25 back-end developers team front-end work. Well-known ECMA-262
+                                    specification. Do not rely on JS-related class libraries for component development. Concerned
+                                    about the development trend of the front, the courage to try and learn new technologies.</p>
+                                <!--DESCRIPTION ON HOME ENDS-->
+                            </div>
+                        </div>
+                    </li>
+                    <!--/#home-->
+                    <!--RESUME PAGE-->
+                    <li id="resume" class="hidden">
+                        <div class="title-container">
+                            <div class="shadow-img"></div>
+                            <h2 class="rotate-out rotated">
+                                <span class="invert">Resume Of</span> Velunce</h2>
+                            <!--RESUME TITLE-->
+                        </div>
+                        <div class="description">
+                            <div class='tabs tabs_animate'>
+                                <!--RESUME TAB LISTS-->
+                                <ul class='horizontal no-padding'>
+                                    <li class="half">
+                                        <a href="#tab-1" class="icon-bg icon-skills">
+                                            <div>Skills</div>
+                                        </a>
+                                    </li>
+                                    <li class="half">
+                                        <a href="#tab-2" class="icon-bg icon-education">
+                                            <div>Educations</div>
+                                        </a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#tab-3" class="icon-bg icon-employment">
+                                            <div>Employment</div>
+                                        </a>
+                                    </li> -->
+                                </ul>
+                                <!--RESUME TAB LISTS ENDS-->
+                                <!--RESUME FIRST TAB/SKILL TAB DETAILS-->
+                                <div id='tab-1'>
+                                    <h3 class="title">OUR SKILLS</h3>
+                                    <!--SKILLS WITH BAR DISPLAY-->
+                                    <ul class="skills-list no-padding">
+                                        <li class="row">
+                                            <div class="col-xs-3">
+                                                <div class="fw-mid">HTML/HTML5</div>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <div class="bar">
+                                                    <div class="percentage" id="bar1" style="width: 90%;"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="row">
+                                            <div class="col-xs-3">
+                                                <div class="fw-mid">CSS/CSS3</div>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <div class="bar">
+                                                    <div class="percentage" id="bar2" style="width: 75%;"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="row">
+                                            <div class="col-xs-3">
+                                                <div class="fw-mid">Javascript</div>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <div class="bar">
+                                                    <div class="percentage" id="bar3" style="width: 85%;"></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!--SKILLS WITH BAR DISPLAY ENDS-->
+                                    <!--SKILLS WITH CIRCLE DISPLAY-->
+                                    <div class="circle-skill-container">
+                                        <h3 class="title">OTHER SKILLS</h3>
+                                        <div class="row">
+                                            <div class="col-xs-4 center-align">
+                                                <div class="circle-bar" id="line-container1">
+                                                    <div class="progressbar-text" id="progress-text1">0</div>
+                                                </div>
+                                                <h5>Photoshop</h5>
+                                            </div>
+                                            <div class="col-xs-4 center-align">
+                                                <div class="circle-bar" id="line-container2">
+                                                    <div class="progressbar-text" id="progress-text2">0</div>
+                                                </div>
+                                                <h5>Illustrator</h5>
+                                            </div>
+                                            <div class="col-xs-4 center-align">
+                                                <div class="circle-bar" id="line-container3">
+                                                    <div class="progressbar-text" id="progress-text3">0</div>
+                                                </div>
+                                                <h5>Audition</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--SKILLS WITH CIRCLE DISPLAY ENDS-->
+                                </div>
+                                <!--RESUME FIRST TAB/SKILL TAB DETAILS ENDS-->
+                                <!--RESUME SECOND TAB/EDUCATION TAB DETAILS-->
+                                <div id='tab-2'>
+                                    <h3 class="title">EDUCATIONS</h3>
+                                    <div>
+                                        <div class="list-content">
+                                            <h5 class="title">Dalian University of Technology</h5>
+                                            <p>Majoring in Network Engineering.</p>
+                                            <p>Get Excellent Graduates Certificate.</p>
+                                            <!--EDUCATION LIST DETAILS-->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--RESUME SECOND TAB/EDUCATION TAB DETAILS ENDS-->
+                                <!--RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS-->
+                                <div id='tab-3'>
+                                    <h3 class="title">EMPLOYMENT</h3>
+                                    <ul class="employment-class tab-cont">
+                                        <li>
+                                            <!--EMPLOYMENT INDIVIDUAL LIST-->
+                                            <h4>Front-End Developer
+                                                <span class="year">2015 - NOW</span>
+                                            </h4>
+                                            <h5>Avanade Ltd</h5>
+                                            <p>Use HTML5 related new technology to serve as front-end engineer in SAP HANA,
+                                                CIO MANAGEMENT RECORDS, Huawei Finance cloud radar, SEC Shanghai power purchase
+                                                project. All the hands of the project are delivered in advance, part of the
+                                                project during the second development process through a large number of H5
+                                                semantic label reconstruction page, many applications H5 new features. On
+                                                the line after the interactive effect of the company and customers praise
+                                                (the above items for internal projects, can not provide access to links).</p>
+                                            <!--EMPLOYMENT LIST DETAILS-->
+                                        </li>
+                                        <li>
+                                            <!--EMPLOYMENT INDIVIDUAL LIST-->
+                                            <h4>Front-End Developer
+                                                <span class="year">2014 - 2005</span>
+                                            </h4>
+                                            <h5>Taiji Culture Media Co., Ltd</h5>
+                                            <p>During the working period to lead more than 3 front-end development team, the
+                                                development and production of H5 mobile site, WEB APP, WeChat mobile phone
+                                                application of a variety of animation site, the development of the company
+                                                front-end development standards. According to customer requirements finishing
+                                                a complete set of standard CSS3 animation effect files applied to all the
+                                                company H5 pages (mobile phone side website example). Independent production,
+                                                transformation of various types of H5 games, according to customer needs
+                                                for customers customized mobile phone activities</p>
+                                            <!--EMPLOYMENT LIST DETAILS-->
+                                        </li>
+                                        <li>
+                                            <!--EMPLOYMENT INDIVIDUAL LIST-->
+                                            <h4>Front-End Developer
+                                                <span class="year">2013 - 2014</span>
+                                            </h4>
+                                            <h5>Ming Shihua Wo Technology Co., Ltd</h5>
+                                            <p>Led the 5-person front-end team, the application of H5 new technology development
+                                                online O2O ordering platform. Use AXURE to make website prototypes. Use the
+                                                METRO-UI style framework to build the front-end web interface. To achieve
+                                                dynamic drag and drop, simulation AERO effects. Using CANVAS to achieve three
+                                                - dimensional point dining table effects. Use geo-targeting to quickly match
+                                                nearby businesses and enhance your users' physical exams. Responsible for
+                                                front-end technical training, technical updates, with the background developers
+                                                to solve various problems. (The project has been changed from the online
+                                                platform to the terminal system, no access to links)</p>
+                                            <!--EMPLOYMENT LIST DETAILS-->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS-->
+                            </div>
+                        </div>
+                    </li>
+                    <!--/#resume-->
+                    <!-- EMPLOYMENT -->
+                    <li id="employment" class="hidden">
+                        <div class="title-container">
+                            <div class="shadow-img"></div>
+                            <h2 class="rotate-out rotated">
+                                <span class="invert">EMPLOYMENT</h2>
+                            <!--RESUME TITLE-->
+                        </div>
+                        <div class="description">
+                            <div class='tabs tabs_animate'>
+                                <!--RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS-->
+                                <div id='tab-3'>
+                                    <!-- <h3 class="title">EMPLOYMENT</h3> -->
+                                    <ul class="employment-class tab-cont">
+                                        <li>
+                                            <!--EMPLOYMENT INDIVIDUAL LIST-->
+                                            <h4>Front-End Developer
+                                                <span class="year">2015 - NOW</span>
+                                            </h4>
+                                            <h5>Avanade Ltd</h5>
+                                            <p>Use HTML5 related new technology to serve as front-end engineer in SAP HANA,
+                                                CIO MANAGEMENT RECORDS, Huawei Finance cloud radar, SEC Shanghai power purchase
+                                                project. All the hands of the project are delivered in advance, part of the
+                                                project during the second development process through a large number of H5
+                                                semantic label reconstruction page, many applications H5 new features. On
+                                                the line after the interactive effect of the company and customers praise
+                                                (the above items for internal projects, can not provide access to links).</p>
+                                            <!--EMPLOYMENT LIST DETAILS-->
+                                        </li>
+                                        <li>
+                                            <!--EMPLOYMENT INDIVIDUAL LIST-->
+                                            <h4>Front-End Developer
+                                                <span class="year">2014 - 2005</span>
+                                            </h4>
+                                            <h5>Taiji Culture Media Co., Ltd</h5>
+                                            <p>During the working period to lead more than 3 front-end development team, the
+                                                development and production of H5 mobile site, WEB APP, WeChat mobile phone
+                                                application of a variety of animation site, the development of the company
+                                                front-end development standards. According to customer requirements finishing
+                                                a complete set of standard CSS3 animation effect files applied to all the
+                                                company H5 pages (mobile phone side website example). Independent production,
+                                                transformation of various types of H5 games, according to customer needs
+                                                for customers customized mobile phone activities</p>
+                                            <!--EMPLOYMENT LIST DETAILS-->
+                                        </li>
+                                        <li>
+                                            <!--EMPLOYMENT INDIVIDUAL LIST-->
+                                            <h4>Front-End Developer
+                                                <span class="year">2013 - 2014</span>
+                                            </h4>
+                                            <h5>Ming Shihua Wo Technology Co., Ltd</h5>
+                                            <p>Led the 5-person front-end team, the application of H5 new technology development
+                                                online O2O ordering platform. Use AXURE to make website prototypes. Use the
+                                                METRO-UI style framework to build the front-end web interface. To achieve
+                                                dynamic drag and drop, simulation AERO effects. Using CANVAS to achieve three
+                                                - dimensional point dining table effects. Use geo-targeting to quickly match
+                                                nearby businesses and enhance your users' physical exams. Responsible for
+                                                front-end technical training, technical updates, with the background developers
+                                                to solve various problems. (The project has been changed from the online
+                                                platform to the terminal system, no access to links)</p>
+                                            <!--EMPLOYMENT LIST DETAILS-->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--RESUME THIRD TAB/EMPLYMENT TAB DETAILS ENDS-->
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- /#employment -->
+
+                    <!--CONTACT PAGE-->
+                    <li id="contact" class="hidden">
+                        <div class="title-container">
+                            <div class="shadow-img"></div>
+                            <h2 class="rotate-out rotated">Contact</h2>
+                            <!--CONTACT PAGE TITLE-->
+                        </div>
+                        <div class="description">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-5">
+                                    <!--CONTACT DESCRIPTION-->
+                                    <h3 class="title">Contact Info</h3>
+                                    <h6 class="sm-title">
+                                        <span class="address-icon">
+                                            <i class="fa fa-phone"></i>
+                                        </span>
+                                        <a href="tel:+8618842635797">+86 18842635797</a>
+                                    </h6>
+                                    <h6 class="sm-title">
+                                        <span class="address-icon">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                                        <a href="mailto:velunce@outlook.com">velunce@outlook.com</a>
+                                    </h6>
+                                    <!--/CONTACT DESCRIPTION ENDS-->
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--/#contact-->
+                </ul>
+                <div class="row mobile-nav-container">
+                    <!--SOCIAL NAV FOR MOBILE-->
+                    <ul class="mobile-social no-padding">
+                        <li>Connect With Me</li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--/.mobile-social-->
+                </div>
+            </div>
+            <!--/.page-segment -->
+            <!--  <h6 class="copyright-text">Copyright © 2015 Velunce</h6> -->
+            <!--if anyone wants copyright Texts-->
+        </div>
+    </div>
+    <!--/.container -->
+    <!--PORTFOLIO IMAGE MODAL LIST-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        </p>
+    </div>
+    </div>
+    </div>
+    <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel2">Hover Style</h4>
+                    <!--PORTFOLIO IMAGE TITLE-->
+                </div>
+                <div class="modal-body">
+                    <img src="images/folio/book.jpg" class="img-responsive" alt="modal-image">
+                    <!--PORTFOLIO MODAL IMAGE-->
+                </div>
+                <div class="modal-footer">
+                    <div class="mf-content">
+                        <p>
+                            PCMDA-XNSZ8-UNPWN-DRI3F PCMDA-ASTXQ-RNJXY-ARC4Q PCMDA-X88KY-Y0MLM-U97JS PCMDA-XY999-CAFOU-9CBPE PCMDA-P7ZM7-NBHPK-6FAWC PCMDA-V2WSE-JLLES-7U3XK
+                            PCMDA-IX55K-NZ87J-J7S6P PCMDA-OG4CI-MMZG6-EJ64Q PCMDA-PH0T3-LXTB6-G5DAC PCMDA-CN64U-83ZMX-Z06BI
+                            PCMDA-P8CXR-VPDKO-MMK89 PCMDA-AGVST-VXTCP-E1MJH PCMDA-JHZ2T-Y5XPN-KXF28 PCMDA-S907Z-QJ4P1-HFBEM
+                            PCMDA-6CPG0-I9AML-YJ02D
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel3">Hover Style</h4>
+                    <!--PORTFOLIO IMAGE TITLE-->
+                </div>
+                <div class="modal-body">
+                    <img src="images/folio/guy.jpg" class="img-responsive" alt="modal-image">
+                    <!--PORTFOLIO MODAL IMAGE-->
+                </div>
+                <div class="modal-footer">
+                    <div class="mf-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ratione quae, alias at. Reprehenderit,
+                            ut quis corporis laudantium, laborum sed omnis qui perspiciatis explicabo. Ipsum culpa aspernatur
+                            dolorem. Amet, quis.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel4">Hover Style</h4>
+                    <!--PORTFOLIO IMAGE TITLE-->
+                </div>
+                <div class="modal-body">
+                    <img src="images/folio/illustration.jpg" class="img-responsive" alt="modal-image">
+                    <!--PORTFOLIO MODAL IMAGE-->
+                </div>
+                <div class="modal-footer">
+                    <div class="mf-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ab id unde veniam error et iste
+                            ut aspernatur accusantium porro molestiae voluptatibus rem, tempore inventore ad minus soluta
+                            praesentium magni?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel5">Hover Style</h4>
+                    <!--PORTFOLIO IMAGE TITLE-->
+                </div>
+                <div class="modal-body">
+                    <img src="images/folio/beach.jpg" class="img-responsive" alt="modal-image">
+                    <!--PORTFOLIO MODAL IMAGE-->
+                </div>
+                <div class="modal-footer">
+                    <div class="mf-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam amet placeat porro, maxime corrupti
+                            laboriosam, quod nulla perferendis esse ipsa atque deleniti. Magni molestias, nemo illum eos,
+                            exercitationem neque incidunt.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal fade" id="subscribe_modal_1" tabindex="-1" role="dialog" aria-labelledby="subscribe_modal_1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="modal-title">Thank You</h2>
+                    <!--PORTFOLIO IMAGE TITLE-->
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mail-sucsess">
+                        <h3>
+                            <span>your mail has been sent</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    </div>
+    <!-- /.modal -->
+    <!-- javascript files -->
+    <script type="text/javascript" src="js/jQueryTween-aio-min.js"></script>
+    <!-- JQUERY Tween Plugin -->
+    <script type="text/javascript" src="js/jquery.tabslet.min.js"></script>
+    <!-- JQUERY Tab plugin-->
+    <script type="text/javascript" src="js/progressbar.min.js"></script>
+    <!-- JQUERY Progressbar Plugin-->
+    <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+    <!-- JQUERY Text Rotator-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap file-->
+    <script type="text/javascript" src='js/isotope.pkgd.min.js'></script>
+    <script src="js/vue.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+</body>
+
+</html>
